@@ -1,0 +1,61 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-family: 微軟正黑體;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: blue;
+}
+
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+.container{
+	max-width: 1200px;
+	/*border: 1px solid #ccc;*/
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+/*選單*/
+
+.navbar .menu .menu-item{
+	float: left;
+	text-align: center;
+}
+.navbar .menu{
+	float: right;
+}
+.navbar{
+	height: 64px;
+	background-color: rgba(0,0,0,0.8);
+}
+.navbar .menu .menu-item a{
+	display: inline-block;
+	color: #fefefe;
+	line-height: 24px;
+	padding: 20px 16px;
+}
